@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            background-color: rgb(237, 214, 214);
+        
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 03px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            box-shadow: 1px 1px 1px rgb(225, 207, 207);
+        }
+
+        
+        nav > a:hover {
+            text-decoration: underline;
+
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }      
+
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Site</h1>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    <header>
+
+    </header>
+    <main>
+         <section id="assuntos">
+            <p>Técnologia em geral</p>
+
+         </section>   
+         <section id="noticias">
+           <p>Moda, Esporte e Técnologia</p> 
+         </section>
+             <article>
+                <h2>Noticias sobre Cinema</h2>
+                <p>Hoje, o cinema está em constante evolução, trazendo novas experiências e histórias para o público.</p>
+             </article>   
+                 <aside>
+                    Artigo Feito por George A. de Barros.
+                 </aside> 
+
+    </main>
+    <footer>
+        <p>Desenvolvido por George A. de Barros</p>
+    </footer>
+
+    
+</body>
+</html>
