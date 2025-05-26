@@ -11,6 +11,8 @@
 
         table {
             width: 500px;
+            border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,27 +22,72 @@
 
         thead {
             background-color: gray;
-            color: white;
+            color: rgb(34, 31, 31);
         }
+
+        caption {
+            font-size: 1,5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+
+        }
+
+        thead, tfoot {
+            background-color: aquamarine;
+            color: rgb(121, 100, 100);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1;
+            background-color: aqua;
+        }
+
+        tbody > tr: :nth-child(1n) {
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+        
     </style>
 </head>
 <body>
     <h1>Uso de tabelas Grandes</h1>
+    <!--Anatomia para tabelas grandes
+    table 
+    caption - no caption não precisa usar as opções abaixo.
+    THEAD > TR, TD, TH.
+    
+    TBODY > TR, TD, TH
+    
+    TFOOT > TR, TD, TH
+    scope é importante-->
 
 <table>
+     <caption>População das Unidades Federativas</caption>
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>Populção</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">Populção</th>
         </tr>
     </thead>
-    <tbody>
+    <tfoot>
+        <tr>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num"><strong>210.147.125</strong></td>
+        </tr>
+        </tfoot>
+        <tbody>
         <tr>
             <td>São Paulo</td>
             <td>45 973 194</td>
         </tr>
         <tr>
             <td>Minas Gerais</td>
+            <td>80 852 122</td>
         </tr>
     </tbody>
     <tfoot>
